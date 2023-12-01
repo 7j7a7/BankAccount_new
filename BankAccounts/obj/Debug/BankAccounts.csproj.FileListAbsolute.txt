@@ -1,0 +1,13 @@
+H:\array\BankAccounts\bin\Debug\BankAccounts.exe.config
+H:\array\BankAccounts\bin\Debug\BankAccounts.exe
+H:\array\BankAccounts\bin\Debug\BankAccounts.pdb
+H:\array\BankAccounts\obj\Debug\BankAccounts.csproj.AssemblyReference.cache
+H:\array\BankAccounts\obj\Debug\BankAccounts.csproj.SuggestedBindingRedirects.cache
+H:\array\BankAccounts\obj\Debug\BankAccounts.FrmMain.resources
+H:\array\BankAccounts\obj\Debug\BankAccounts.Properties.Resources.resources
+H:\array\BankAccounts\obj\Debug\BankAccounts.csproj.GenerateResource.cache
+H:\array\BankAccounts\obj\Debug\BankAccounts.csproj.CoreCompileInputs.cache
+H:\array\BankAccounts\obj\Debug\BankAccounts.exe
+H:\array\BankAccounts\obj\Debug\BankAccounts.pdb
+H:\array\BankAccounts\obj\Debug\BankAccounts.CurrentAccount.resources
+H:\array\BankAccounts\obj\Debug\BankAccounts.SavingsAccount.resources
