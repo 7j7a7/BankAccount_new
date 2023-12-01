@@ -61,7 +61,6 @@
             this.txtWithdrawS.Name = "txtWithdrawS";
             this.txtWithdrawS.Size = new System.Drawing.Size(126, 20);
             this.txtWithdrawS.TabIndex = 2;
-            this.txtWithdrawS.Text = "£";
             // 
             // txtDepositS
             // 
@@ -69,7 +68,6 @@
             this.txtDepositS.Name = "txtDepositS";
             this.txtDepositS.Size = new System.Drawing.Size(116, 20);
             this.txtDepositS.TabIndex = 3;
-            this.txtDepositS.Text = "£";
             // 
             // btnS_Withdraw
             // 
@@ -89,6 +87,7 @@
             this.btnS_Deposit.TabIndex = 5;
             this.btnS_Deposit.Text = "deposit";
             this.btnS_Deposit.UseVisualStyleBackColor = true;
+            this.btnS_Deposit.Click += new System.EventHandler(this.btnS_Deposit_Click);
             // 
             // btnExit
             // 

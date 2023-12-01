@@ -12,11 +12,10 @@ namespace BankAccounts
 {
     public partial class SavingsAccount : Form
     {
-        double withdrawalAmount;
-        int withdrawalCounter = 0;
+        double withdrawalAmount, depositAmount;
+        double balanceS = FrmMain.BalanceSaving;
         public SavingsAccount()
         {
-            double withdrawalAmount,wBalance;
             InitializeComponent();
         }
            
@@ -30,9 +29,43 @@ namespace BankAccounts
 
         }
 
+        private void btnS_Deposit_Click(object sender, EventArgs e)
+        {
+            DialogResult d;
+            depositAmount = double.Parse(txtDepositS.Text);
+            if((FrmMain.comboBox1 == "active") && (balanceS > 15))
+            {
+                balanceS = balanceS + depositAmount;
+                FrmMain.BalanceSaving = balanceS;
+                d = MessageBox.Show("account balance", FrmMain.BalanceSaving.ToString());
+                FrmMain.AnnualInterestRate = FrmMain.BalanceSaving * 0.04;
+            }
+            else 
+            {
+                d = MessageBox.Show("your account balance is low, please top up now");
+            }
+        }
+
+        private void cmbStatusSaving_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnS_Withdraw_Click(object sender, EventArgs e)
         {
-         
+            DialogResult w;
+            withdrawalAmount = double.Parse(txtWithdrawS.Text);
+            if((FrmMain.comboBox1 == "active")&&(balanceS> 15))
+            {
+                balanceS = balanceS - withdrawalAmount;
+                FrmMain.withdrawalCounterS = FrmMain.withdrawalCounterS + 1;
+                FrmMain.BalanceSaving = balanceS;
+                w = MessageBox.Show("account balance", FrmMain.BalanceSaving.ToString());
+            }
+            else 
+            {
+                w = MessageBox.Show("account balance is low, please top up now");
+            }
         }
     }
 }

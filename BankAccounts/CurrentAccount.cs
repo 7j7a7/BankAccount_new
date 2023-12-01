@@ -16,5 +16,25 @@ namespace BankAccounts
         {
             InitializeComponent();
         }
+
+        private void btnS_Withdraw_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDepositC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbStatusCurrent_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

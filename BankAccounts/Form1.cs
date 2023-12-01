@@ -15,7 +15,7 @@ namespace BankAccounts
         //variable declaration
         public static double MonthlyInterestRate, AnnualInterestRate, Balance;
         public static double withdrawalAmount, BalanceSaving = 0,MonthlyInterest, BalanceCurrent = 0;
-        public static int withdrawalCounter = 0, savingsCounter = 0;
+        public static int withdrawalCounter = 0, savingsCounter = 0, depositCounterS, withdrawalCounterS, withdrawalCounterC, depositCounterC, despositCounterC;
         public static string status_S, status_C;
         public FrmMain()
         {
@@ -63,7 +63,7 @@ namespace BankAccounts
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (BalanceSaving =0)
+            if (BalanceSaving > 0)
             {
                 SavingMain();
             }
@@ -71,6 +71,23 @@ namespace BankAccounts
             {
                 CurrentMain();
             }
+        }
+
+        public void SavingMain()
+        {
+            txtBalanceSaving.Text = BalanceSaving.ToString();
+            txtWithdrawalSaving.Text = withdrawalCounterS.ToString();
+            txtDepositSaving.Text = depositCounterS.ToString();
+            txtServiceChargeSaving.Text = AnnualInterestRate.ToString();
+            MonthlyInterest = BalanceSaving * 0.15;
+            txtInterestRateSaving.Text = MonthlyInterest.ToString();
+        }
+
+        public void CurrentMain() 
+        {
+            txtBalanceCurrent.Text = BalanceCurrent.ToString();
+            txtWithdrawalCurrent.Text = withdrawalCounterC.ToString();
+            txtDepositCurrent.Text = despositCounterC.ToString();
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
@@ -103,25 +120,25 @@ namespace BankAccounts
 
         public void calculateInterest() 
         {
-            //calculation
-            AnnualInterestRate= double.Parse(txtInterestRate.Text);
-            double Balance = double.Parse(txtBalanceCurrent.Text);
-            MonthlyInterestRate = (AnnualInterestRate / 12);
-            MonthlyInterest = Balance * MonthlyInterestRate;
-            Balance = Balance + MonthlyInterest;
+            ////calculation
+            //AnnualInterestRate= double.Parse(txtInterestRateSaving.Text);
+            //double Balance = double.Parse(txtBalanceCurrent.Text);
+            //MonthlyInterestRate = (AnnualInterestRate / 12);
+            //MonthlyInterest = Balance * MonthlyInterestRate;
+            //Balance = Balance + MonthlyInterest;
 
-            //display
-            txtBalanceCurrent.Text=Balance.ToString();
+            ////display
+            //txtBalanceCurrent.Text=Balance.ToString();
         }
 
         public void withdraw(double amt)
         {
-            withdrawalAmount =amt;
-            Balance = Balance - withdrawalAmount;
+            //withdrawalAmount =amt;
+            //Balance = Balance - withdrawalAmount;
             
-            txtBalanceCurrent.Text=Balance.ToString();
-            withdrawalCounter++;
-            txtWithdrawals.Text= withdrawalCounter.ToString();
+            //txtBalanceCurrent.Text=Balance.ToString();
+            //withdrawalCounter++;
+            //txtWithdrawalCurrent.Text= withdrawalCounter.ToString();
         }
     }
 }

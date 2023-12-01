@@ -42,12 +42,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.cmbStatusCurrent = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtServiceCharge = new System.Windows.Forms.TextBox();
-            this.txtInterestRate = new System.Windows.Forms.TextBox();
-            this.txtWithdrawals = new System.Windows.Forms.TextBox();
-            this.txtDeposits = new System.Windows.Forms.TextBox();
+            this.txtInterestRateSaving = new System.Windows.Forms.TextBox();
+            this.txtWithdrawalCurrent = new System.Windows.Forms.TextBox();
+            this.txtDepositCurrent = new System.Windows.Forms.TextBox();
             this.txtBalanceCurrent = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDepositSavings = new System.Windows.Forms.TextBox();
             this.txtBalanceSaving = new System.Windows.Forms.TextBox();
             this.cmbStatusSaving = new System.Windows.Forms.Label();
             this.txtServiceChargeSaving = new System.Windows.Forms.Label();
@@ -258,12 +258,12 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.DarkSalmon;
-            this.groupBox2.Controls.Add(this.cmbStatus);
+            this.groupBox2.Controls.Add(this.cmbStatusCurrent);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.txtServiceCharge);
-            this.groupBox2.Controls.Add(this.txtInterestRate);
-            this.groupBox2.Controls.Add(this.txtWithdrawals);
-            this.groupBox2.Controls.Add(this.txtDeposits);
+            this.groupBox2.Controls.Add(this.txtInterestRateSaving);
+            this.groupBox2.Controls.Add(this.txtWithdrawalCurrent);
+            this.groupBox2.Controls.Add(this.txtDepositCurrent);
             this.groupBox2.Controls.Add(this.txtBalanceCurrent);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
@@ -278,16 +278,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "current";
             // 
-            // cmbStatus
+            // cmbStatusCurrent
             // 
-            this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Items.AddRange(new object[] {
+            this.cmbStatusCurrent.FormattingEnabled = true;
+            this.cmbStatusCurrent.Items.AddRange(new object[] {
             "active",
             "inactive"});
-            this.cmbStatus.Location = new System.Drawing.Point(336, 24);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(121, 26);
-            this.cmbStatus.TabIndex = 14;
+            this.cmbStatusCurrent.Location = new System.Drawing.Point(336, 24);
+            this.cmbStatusCurrent.Name = "cmbStatusCurrent";
+            this.cmbStatusCurrent.Size = new System.Drawing.Size(121, 26);
+            this.cmbStatusCurrent.TabIndex = 14;
             // 
             // label12
             // 
@@ -305,27 +305,27 @@
             this.txtServiceCharge.Size = new System.Drawing.Size(164, 25);
             this.txtServiceCharge.TabIndex = 9;
             // 
-            // txtInterestRate
+            // txtInterestRateSaving
             // 
-            this.txtInterestRate.Location = new System.Drawing.Point(80, 370);
-            this.txtInterestRate.Name = "txtInterestRate";
-            this.txtInterestRate.Size = new System.Drawing.Size(164, 25);
-            this.txtInterestRate.TabIndex = 8;
-            this.txtInterestRate.TextChanged += new System.EventHandler(this.txtInterestRate_TextChanged);
+            this.txtInterestRateSaving.Location = new System.Drawing.Point(80, 370);
+            this.txtInterestRateSaving.Name = "txtInterestRateSaving";
+            this.txtInterestRateSaving.Size = new System.Drawing.Size(164, 25);
+            this.txtInterestRateSaving.TabIndex = 8;
+            this.txtInterestRateSaving.TextChanged += new System.EventHandler(this.txtInterestRate_TextChanged);
             // 
-            // txtWithdrawals
+            // txtWithdrawalCurrent
             // 
-            this.txtWithdrawals.Location = new System.Drawing.Point(80, 277);
-            this.txtWithdrawals.Name = "txtWithdrawals";
-            this.txtWithdrawals.Size = new System.Drawing.Size(164, 25);
-            this.txtWithdrawals.TabIndex = 7;
+            this.txtWithdrawalCurrent.Location = new System.Drawing.Point(80, 277);
+            this.txtWithdrawalCurrent.Name = "txtWithdrawalCurrent";
+            this.txtWithdrawalCurrent.Size = new System.Drawing.Size(164, 25);
+            this.txtWithdrawalCurrent.TabIndex = 7;
             // 
-            // txtDeposits
+            // txtDepositCurrent
             // 
-            this.txtDeposits.Location = new System.Drawing.Point(80, 178);
-            this.txtDeposits.Name = "txtDeposits";
-            this.txtDeposits.Size = new System.Drawing.Size(164, 25);
-            this.txtDeposits.TabIndex = 6;
+            this.txtDepositCurrent.Location = new System.Drawing.Point(80, 178);
+            this.txtDepositCurrent.Name = "txtDepositCurrent";
+            this.txtDepositCurrent.Size = new System.Drawing.Size(164, 25);
+            this.txtDepositCurrent.TabIndex = 6;
             // 
             // txtBalanceCurrent
             // 
@@ -429,16 +429,16 @@
             this.groupBox3.Controls.Add(this.comboBox1);
             this.groupBox3.Controls.Add(this.textBox4);
             this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Controls.Add(this.textBox2);
+            this.groupBox3.Controls.Add(this.txtDepositSavings);
             this.groupBox3.Controls.Add(this.txtBalanceSaving);
             this.groupBox3.Controls.Add(this.cmbStatusSaving);
             this.groupBox3.Controls.Add(this.txtServiceChargeSaving);
             this.groupBox3.Controls.Add(this.txtWithdrawalSaving);
             this.groupBox3.Controls.Add(this.txtDepositSaving);
             this.groupBox3.Controls.Add(this.lbel13);
-            this.groupBox3.Location = new System.Drawing.Point(961, 39);
+            this.groupBox3.Location = new System.Drawing.Point(961, 55);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(497, 539);
+            this.groupBox3.Size = new System.Drawing.Size(497, 523);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Savings";
@@ -469,12 +469,12 @@
             this.textBox3.Size = new System.Drawing.Size(146, 20);
             this.textBox3.TabIndex = 7;
             // 
-            // textBox2
+            // txtDepositSavings
             // 
-            this.textBox2.Location = new System.Drawing.Point(82, 238);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(146, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtDepositSavings.Location = new System.Drawing.Point(82, 238);
+            this.txtDepositSavings.Name = "txtDepositSavings";
+            this.txtDepositSavings.Size = new System.Drawing.Size(146, 20);
+            this.txtDepositSavings.TabIndex = 6;
             // 
             // txtBalanceSaving
             // 
@@ -572,9 +572,9 @@
         private System.Windows.Forms.TextBox txtTown;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.TextBox txtServiceCharge;
-        private System.Windows.Forms.TextBox txtInterestRate;
-        private System.Windows.Forms.TextBox txtWithdrawals;
-        private System.Windows.Forms.TextBox txtDeposits;
+        private System.Windows.Forms.TextBox txtInterestRateSaving;
+        private System.Windows.Forms.TextBox txtWithdrawalCurrent;
+        private System.Windows.Forms.TextBox txtDepositCurrent;
         private System.Windows.Forms.TextBox txtBalanceCurrent;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -584,7 +584,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnCurrentAccount;
         private System.Windows.Forms.Button btnSavingsAccount;
-        private System.Windows.Forms.ComboBox cmbStatus;
+        private System.Windows.Forms.ComboBox cmbStatusCurrent;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -595,7 +595,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDepositSavings;
         private System.Windows.Forms.Label lbel13;
         private System.Windows.Forms.TextBox txtBalanceSaving;
     }
