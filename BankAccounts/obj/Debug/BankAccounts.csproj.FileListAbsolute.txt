@@ -11,3 +11,16 @@ H:\array\BankAccounts\obj\Debug\BankAccounts.exe
 H:\array\BankAccounts\obj\Debug\BankAccounts.pdb
 H:\array\BankAccounts\obj\Debug\BankAccounts.CurrentAccount.resources
 H:\array\BankAccounts\obj\Debug\BankAccounts.SavingsAccount.resources
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\bin\Debug\BankAccounts.exe.config
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\bin\Debug\BankAccounts.exe
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\bin\Debug\BankAccounts.pdb
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\obj\Debug\BankAccounts.csproj.AssemblyReference.cache
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\obj\Debug\BankAccounts.csproj.SuggestedBindingRedirects.cache
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\obj\Debug\BankAccounts.CurrentAccount.resources
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\obj\Debug\BankAccounts.FrmMain.resources
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\obj\Debug\BankAccounts.Properties.Resources.resources
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\obj\Debug\BankAccounts.SavingsAccount.resources
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\obj\Debug\BankAccounts.csproj.GenerateResource.cache
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\obj\Debug\BankAccounts.csproj.CoreCompileInputs.cache
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\obj\Debug\BankAccounts.exe
+C:\Users\20491158\Source\Repos\BankAccount_new\BankAccounts\obj\Debug\BankAccounts.pdb

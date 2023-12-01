@@ -61,6 +61,18 @@ namespace BankAccounts
             status_S = cmbStatusSaving.Text;
         }
 
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (BalanceSaving =0)
+            {
+                SavingMain();
+            }
+            if (BalanceCurrent > 0)
+            {
+                CurrentMain();
+            }
+        }
+
         private void groupBox3_Enter(object sender, EventArgs e)
         {
 
@@ -83,8 +95,10 @@ namespace BankAccounts
 
         private void btnCurrentAccount_Click(object sender, EventArgs e)
         {
+            BalanceCurrent = double.Parse(txtBalanceCurrent.Text);
             CurrentAccount form3 = new CurrentAccount();
             form3.Visible = true;
+            status_C = cmbStatusCurrent.Text;
         }
 
         public void calculateInterest() 

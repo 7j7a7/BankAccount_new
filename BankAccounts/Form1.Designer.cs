@@ -388,6 +388,7 @@
             this.btnUpdate.TabIndex = 15;
             this.btnUpdate.Text = "update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnExit
             // 
