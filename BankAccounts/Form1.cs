@@ -47,6 +47,11 @@ namespace BankAccounts
 
         }
 
+        private void cmbStatusCurrent_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();

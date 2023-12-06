@@ -55,7 +55,7 @@ namespace BankAccounts
         {
             DialogResult w;
             withdrawalAmount = double.Parse(txtWithdrawS.Text);
-            if((FrmMain.status_C == "active")&&(balanceS> 15))
+            if((FrmMain.status_S == "active")&&(balanceS> 15))
             {
                 balanceS = balanceS - withdrawalAmount;
                 FrmMain.withdrawalCounterS = FrmMain.withdrawalCounterS + 1;

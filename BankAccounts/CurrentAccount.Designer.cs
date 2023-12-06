@@ -54,6 +54,7 @@
             this.btnC_Deposit.TabIndex = 12;
             this.btnC_Deposit.Text = "deposit";
             this.btnC_Deposit.UseVisualStyleBackColor = true;
+            this.btnC_Deposit.Click += new System.EventHandler(this.btnC_Deposit_Click);
             // 
             // btnC_Withdraw
             // 
@@ -71,7 +72,6 @@
             this.txtDepositC.Name = "txtDepositC";
             this.txtDepositC.Size = new System.Drawing.Size(116, 20);
             this.txtDepositC.TabIndex = 10;
-            this.txtDepositC.Text = "£";
             this.txtDepositC.TextChanged += new System.EventHandler(this.txtDepositC_TextChanged);
             // 
             // txtWithdrawC
@@ -80,7 +80,6 @@
             this.txtWithdrawC.Name = "txtWithdrawC";
             this.txtWithdrawC.Size = new System.Drawing.Size(126, 20);
             this.txtWithdrawC.TabIndex = 9;
-            this.txtWithdrawC.Text = "£";
             // 
             // label2
             // 

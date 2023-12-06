@@ -288,6 +288,7 @@
             this.cmbStatusCurrent.Name = "cmbStatusCurrent";
             this.cmbStatusCurrent.Size = new System.Drawing.Size(121, 26);
             this.cmbStatusCurrent.TabIndex = 14;
+            this.cmbStatusCurrent.SelectedIndexChanged += new System.EventHandler(this.cmbStatusCurrent_SelectedIndexChanged);
             // 
             // label12
             // 
