@@ -59,7 +59,7 @@
             this.btnCurrentAccount = new System.Windows.Forms.Button();
             this.btnSavingsAccount = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbStatusSavings = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.txtDepositSavings = new System.Windows.Forms.TextBox();
@@ -426,7 +426,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.DarkSalmon;
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.cmbStatusSavings);
             this.groupBox3.Controls.Add(this.textBox4);
             this.groupBox3.Controls.Add(this.textBox3);
             this.groupBox3.Controls.Add(this.txtDepositSavings);
@@ -444,16 +444,16 @@
             this.groupBox3.Text = "Savings";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // comboBox1
+            // cmbStatusSavings
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbStatusSavings.FormattingEnabled = true;
+            this.cmbStatusSavings.Items.AddRange(new object[] {
             "active",
             "inactive"});
-            this.comboBox1.Location = new System.Drawing.Point(318, 103);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 9;
+            this.cmbStatusSavings.Location = new System.Drawing.Point(318, 103);
+            this.cmbStatusSavings.Name = "cmbStatusSavings";
+            this.cmbStatusSavings.Size = new System.Drawing.Size(121, 21);
+            this.cmbStatusSavings.TabIndex = 9;
             // 
             // textBox4
             // 
@@ -592,7 +592,7 @@
         private System.Windows.Forms.Label txtServiceChargeSaving;
         private System.Windows.Forms.Label txtWithdrawalSaving;
         private System.Windows.Forms.Label txtDepositSaving;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbStatusSavings;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox txtDepositSavings;

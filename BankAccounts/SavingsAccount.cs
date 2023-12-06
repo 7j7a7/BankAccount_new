@@ -33,7 +33,7 @@ namespace BankAccounts
         {
             DialogResult d;
             depositAmount = double.Parse(txtDepositS.Text);
-            if((FrmMain.comboBox1 == "active") && (balanceS > 15))
+            if((FrmMain.status_S == "active") && (balanceS > 15))
             {
                 balanceS = balanceS + depositAmount;
                 FrmMain.BalanceSaving = balanceS;
@@ -55,7 +55,7 @@ namespace BankAccounts
         {
             DialogResult w;
             withdrawalAmount = double.Parse(txtWithdrawS.Text);
-            if((FrmMain.comboBox1 == "active")&&(balanceS> 15))
+            if((FrmMain.status_C == "active")&&(balanceS> 15))
             {
                 balanceS = balanceS - withdrawalAmount;
                 FrmMain.withdrawalCounterS = FrmMain.withdrawalCounterS + 1;
